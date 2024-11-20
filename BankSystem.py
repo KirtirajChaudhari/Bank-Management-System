@@ -5,13 +5,12 @@ from tkinter import messagebox
 # Database connection
 conn = mysql.connector.connect(
     host="localhost",
-    user="root",  # Replace with your MySQL username
-    password="root",  # Replace with your MySQL password
+    user="root",  #your username may vary
+    password="", #password of your sql server 
     database="BankSystem"
 )
 cursor = conn.cursor()
 
-# Global variable for logged-in user
 logged_in_user = None
 
 # Function to handle user login
